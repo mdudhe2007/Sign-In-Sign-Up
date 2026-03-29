@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: transparent;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 1px;
+      width: 320px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin: 10px 0;
+    }
+
+    .options a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    button {
+      width: 50%;
+      padding: 10px;
+      background: #3b82f6;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #2563eb;
+       transform: scale(1.1);
+    }
+
+    .signup-link {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    .signup-link a {
+      color: #22c55e;
+      text-decoration: none;
+    }
+
+    .social {
+      margin-top: 15px;
+    }
+
+    .social img {
+      width: 35px;
+      margin: 0 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Hii,Please Enter Email-Id & Password</h2>
+
+    <form onsubmit="return subm()">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+<input type="password" placeholder="Confirm Password" required>
+
+
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <h3>OR</h3>
+
+    <div class="social">
+      <a href="https://accounts.google.com" target="_blank">
+        <img src="google.png">
+      </a>
+      <a href="https://www.facebook.com/login/" target="_blank">
+        <img src="facebook.png">
+      </a>
+      <a href="https://www.icloud.com/" target="_blank">
+        <img src="apple.png">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function subm()
+     {
+      alert("Login Successful 🚀");
+      window.open("login.html","blank");
+      return false;
+    }
+  </script>
+</body>
+</html>
